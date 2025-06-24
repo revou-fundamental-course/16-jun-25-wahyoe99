@@ -1,0 +1,124 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f8f9fa;
+}
+
+.main-header {
+  text-align: center;
+  padding: 25px;
+  background: white;
+}
+
+.main-header h1 {
+  margin: 10px 0;
+  color: #000;
+}
+
+.main-header p {
+  margin: 5px;
+  color: #333;
+}
+
+.btn-luas, .btn-keliling {
+  background-color: #0d6efd;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  margin: 10px 5px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.btn-keliling {
+  background-color: #09fb39;
+}
+
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+  background: white;
+  padding: 20px;
+  border-radius: 6px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.section-title-luas {
+  background-color: #0d6efd;
+  color: white;
+  padding: 12px;
+  border-radius: 4px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.section-title-keliling {
+  background-color: #15fd0d;
+  color: white;
+  padding: 12px;
+  border-radius: 4px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.diagram {
+  text-align: center;
+}
+
+.diagram img {
+  max-width: 250px;
+}
+
+.rumus {
+  margin-top: 10px;
+  text-align: left;
+  padding: 0 20px;
+}
+
+.form-container {
+  margin-top: 20px;
+  padding: 20px;
+  border-top: 1px solid #ddd;
+}
+
+.form-container h3 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-hitung {
+  background-color: #0d6efd;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-reset {
+  background-color: orange;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#result {
+  margin: 10px 0;
+  font-size: 16px;
+  line-height: 1.5;
+}

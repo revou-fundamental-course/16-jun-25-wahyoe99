@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Katik - Kalkulator Segitiga</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <header class="main-header">
+    <h1>Welcome to Katik</h1>
+    <p>Hai Sobat, Selamat datang di Katik :)</p>
+    <p>Sebuah web apps sederhana yang berfungsi untuk menghitung luas dan keliling bangun datar</p>
+    <button class="btn-luas" onclick="document.getElementById('luas-section').scrollIntoView({behavior: 'smooth'})">Luas Segitiga</button>
+    <button class="btn-keliling" onclick="document.getElementById('keliling-section').scrollIntoView({behavior: 'smooth'})">Keliling Segitiga</button>
+  </header>
+
+  <main class="container">
+
+    <!-- LUAS SEGITIGA -->
+    <section id="luas-section" class="section-title-luas">
+      <h2>Luas Segitiga</h2>
+    </section>
+
+    <section class="diagram">
+      <img src="keliling.png" alt="Segitiga" height="200px" width="400px">
+      <div class="rumus">
+        <p><strong>Rumus Luas Segitiga:</strong> <br>L = 1/2 x a x t</p>
+        <p><strong>Keterangan:</strong><br>L = Luas<br>a = Alas<br>t = Tinggi</p>
+      </div>
+    </section>
+
+    <section class="form-container">
+      <h3>Hitung Luas Segitiga</h3>
+      <form id="triangle-area-form">
+            <div class="form-group">
+                <label for="alas">Alas (cm):</label>
+                <input type="number" id="alas" placeholder="Masukkan alas (cm)" required min="1" >
+            </div>
+            <div class="form-group">
+                <label for="tinggi">Tinggi (cm):</label>
+                <input type="number" id="tinggi" placeholder="Masukkan tinggi (cm)" required min="1" >
+            </div>
+
+        <div id="luas-result"></div>
+        <div class="form-buttons">
+          <button type="submit" class="btn-hitung">Hitung</button>
+          <button type="reset" class="btn-reset" onclick="resetLuas()">Reset</button>
+        </div>
+      </form>
+    </section>
+
+    <!-- KELILING SEGITIGA -->
+    <section id="keliling-section" class="section-title-keliling">
+      <h2>Keliling Segitiga</h2>
+    </section>
+
+    <section class="diagram">
+      <img src="keliling.png" alt="Segitiga" height="200px" width="400px">
+      <div class="rumus">
+        <p><strong>Rumus Keliling Segitiga:</strong> <br>K = S1 + S2 + S3</p>
+        <p><strong>Keterangan:</strong><br>K = Keliling<br>S1 = Sisi A<br>S2 = Sisi B<br>S3 = Sisi C</p>
+      </div>
+    </section>
+
+    <section class="form-container">
+      <h3>Hitung Keliling Segitiga</h3>
+      <form id="triangle-perimeter-form">
+            <div class="form-group">
+                <label for="alas">Sisi A (cm):</label>
+                <input type="number" id="sisiA" placeholder="Masukkan sisi A (cm)" required>
+            </div>
+            <div class="form-group">
+                <label for="alas">Sisi B (cm):</label>
+                <input type="number" id="sisiB" placeholder="Masukkan sisi B (cm)" required>
+            </div>
+            <div class="form-group">
+                <label for="alas">Sisi C (cm):</label>
+                <input type="number" id="sisiC" placeholder="Masukkan sisi C (cm)" required>
+            </div>
+
+        <div id="keliling-result"></div>
+        <div class="form-buttons">
+          <button type="submit" class="btn-hitung">Hitung</button>
+          <button type="reset" class="btn-reset" onclick="resetKeliling()">Reset</button>
+        </div>
+      </form>
+    </section>
+
+  </main>
+  <script src="js/script.js"></script>
+</body>
+</html>
